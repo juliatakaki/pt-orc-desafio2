@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Game.css'
+import '../../components/board/index'
+import Board from '../../components/board/index'
 
 function Game() {
   const navegate  = useNavigate()
@@ -97,17 +99,7 @@ useEffect(()=>{
         <h1>{resultado}</h1>:
         <h1>Vez do jogador {localStorage.getItem(`player${player}`)}</h1>
         }
-        <div className='game'>
-          <button onClick={(e)=>{click(setValorCel1,valorCel1)}}>{valorCel1}</button>
-          <button onClick={(e)=>{click(setValorCel2,valorCel2)}}>{valorCel2}</button>
-          <button onClick={(e)=>{click(setValorCel3,valorCel3)}}>{valorCel3}</button>
-          <button onClick={(e)=>{click(setValorCel4,valorCel4)}}>{valorCel4}</button>
-          <button onClick={(e)=>{click(setValorCel5,valorCel5)}}>{valorCel5}</button>
-          <button onClick={(e)=>{click(setValorCel6,valorCel6)}}>{valorCel6}</button>
-          <button onClick={(e)=>{click(setValorCel7,valorCel7)}}>{valorCel7}</button>
-          <button onClick={(e)=>{click(setValorCel8,valorCel8)}}>{valorCel8}</button>
-          <button onClick={(e)=>{click(setValorCel9,valorCel9)}}>{valorCel9}</button>
-        </div> 
+        <Board/>
         <div className='containerReset'>
           <button onClick={restart}>Recomeçar</button>
           <button onClick={zerarPlacar}>zerar placar</button>
