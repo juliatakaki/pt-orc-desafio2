@@ -29,14 +29,37 @@ function Game() {
     setValorCel(player)
     setPlayer(player==="x"?"o":"x")
     
+    
   }
 
   const ganhou =(valor)=>{
     setVitoria(true)
-    setResultado(`Jogador ${valor} ganhou`)
     let pontosAtuais = parseInt(localStorage.getItem(valor))
+    let winner = `player${valor}`
+    setResultado(`${localStorage.getItem(winner)} ganhou`)
     localStorage.setItem(valor,pontosAtuais+1)
 
+  }
+
+  const restart = ()=>{
+    setPlayer("x")
+    setValorCel1("")
+    setValorCel2("")
+    setValorCel3("")
+    setValorCel4("")
+    setValorCel5("")
+    setValorCel6("")
+    setValorCel7("")
+    setValorCel8("")
+    setValorCel9("")
+    setVitoria(false)
+    setResultado("")
+  }
+
+  const zerarPlacar = ()=>{
+    localStorage.setItem("x",0)
+    localStorage.setItem("o",0)
+    restart()
   }
 
 
@@ -58,19 +81,13 @@ useEffect(()=>{
   valorCel7 !="" && valorCel8 !="" && valorCel9 !="" ? setResultado("Empate"):{}
 },[valorCel1, valorCel2, valorCel3, valorCel4, valorCel5, valorCel6, valorCel7, valorCel8, valorCel9])
 
-  const zerarPlacar = ()=>{
-    localStorage.setItem("x",0)
-    localStorage.setItem("o",0)
-    window.location.reload()
-  }
-
-
+ 
   return (
     <> 
     <body id='bodyGame'>
       
       <div>
-        <h1>Jogador x : {pontosPlayer1} pts</h1>
+        <h1>{localStorage.getItem("playerx")} : {pontosPlayer1} pts</h1>
       </div>
 
       <div className='containerGame'>
@@ -78,7 +95,7 @@ useEffect(()=>{
 
         {resultado?
         <h1>{resultado}</h1>:
-        <h1>Vez do jogador {player}</h1>
+        <h1>Vez do jogador {localStorage.getItem(`player${player}`)}</h1>
         }
         <div className='game'>
           <button onClick={(e)=>{click(setValorCel1,valorCel1)}}>{valorCel1}</button>
@@ -92,12 +109,12 @@ useEffect(()=>{
           <button onClick={(e)=>{click(setValorCel9,valorCel9)}}>{valorCel9}</button>
         </div> 
         <div className='containerReset'>
-          <button onClick={()=>{window.location.reload()}}>Recomeçar</button>
+          <button onClick={restart}>Recomeçar</button>
           <button onClick={zerarPlacar}>zerar placar</button>
         </div>
       </div>
       <div>
-        <h1>Jogador o : {pontosPlayer2} pts</h1>
+        <h1>{localStorage.getItem("playero")} : {pontosPlayer2} pts</h1>
       </div>
     </body>
     </>

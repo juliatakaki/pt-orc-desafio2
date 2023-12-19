@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './Home.css'
 
 function Home(){
@@ -10,7 +10,7 @@ function Home(){
         <>
         <body id='bodyHome'>
             <h1>Jogo da velha</h1>
-            <button onClick={()=>{navegate('/game')}}>jogar</button>
+            <button onClick={()=>{navegate("/nomes2p")}}>jogar</button>
         </body>
         </>
     )

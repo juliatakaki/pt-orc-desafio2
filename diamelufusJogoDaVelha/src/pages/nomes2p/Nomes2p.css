@@ -1,0 +1,23 @@
+.bodyNomes2p{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.container_Nomes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.div_Nomes{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.div_buttonJogar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
