@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import './Game.css'
+import './Multiplayer.css'
 import '../../components/board/index'
 import Board from '../../components/board/index'
 
-function Game() {
+function Multiplayer() {
   const navegate  = useNavigate()
   const pontosPlayer1 = parseInt(localStorage.getItem("x"))
   const pontosPlayer2 = parseInt(localStorage.getItem("o"))
@@ -86,13 +86,13 @@ useEffect(()=>{
  
   return (
     <> 
-    <body id='bodyGame'>
+    <body id='bodyMultiplayer'>
       
       <div>
         <h1>{localStorage.getItem("playerx")} : {pontosPlayer1} pts</h1>
       </div>
 
-      <div className='containerGame'>
+      <div className='containerMultiplayer'>
         <button onClick={()=>{navegate('/')}}>voltar</button>
 
         {resultado?
@@ -114,4 +114,4 @@ useEffect(()=>{
   )
 }
 
-export default Game
+export default Multiplayer

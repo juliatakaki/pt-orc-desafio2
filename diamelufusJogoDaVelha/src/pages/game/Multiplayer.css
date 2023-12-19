@@ -1,11 +1,11 @@
-#bodyGame{
+#bodyMultiplayer{
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: space-evenly;
 
   }
-.containerGame{
+.containerMultiplayer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,13 +14,13 @@
 .containerReset button{
     margin: 5px;
   }
-.game{
+.multiplayer{
     margin: 10px;
     display: grid;
     grid-template-columns: auto auto auto;
   
   }
-.game button{
+.multiplayer button{
     margin: 2px;
     height: 150px;
     width: 150px;
