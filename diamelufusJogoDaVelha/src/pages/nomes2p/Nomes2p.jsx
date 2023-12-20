@@ -22,11 +22,11 @@ function Nomes2p() {
         <body className="bodyNomes2p">
             <div className="container_Nomes">
                 <div className="div_Nomes">
-                    <h1>Escolha um nome para o jogaror X:</h1>
+                    <h1>Escolha um nome para o jogador X:</h1>
                     <input type="text" onChange={(e)=>{setNomeX(e.target.value)}} ></input>
                 </div>
                 <div className="div_Nomes">
-                    <h1>Escolha um nome para o jogaror O:</h1>
+                    <h1>Escolha um nome para o jogador O:</h1>
                     <input type="text" onChange={(e)=>{setNomeO(e.target.value)}} ></input>
                 </div>
             </div>
