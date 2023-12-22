@@ -33,23 +33,35 @@ function Nome1p() {
 
     return (
         <body id="bodyNome1p">
+            <div className="interface">
+                <button className="voltar" onClick={()=>{navigate("/home")}}> &lt;</button>
+                <div className="caixa">
+                    <div className="titulo">
+                        <p id="h1">Modo um jogadores</p>
+                    </div>
 
-            <label>
-            Nome do Jogador: 
-            <input type='text' name='nome' placeholder='Digite seu nome' onChange={(e)=>{setNomeJogador(e.target.value)}}/>
-            </label>
+                    <div className="nome">
+                        <p id="h2">Nome do Jogador:</p> 
+                        <input id="imp" type='text' name='nome' placeholder='Digite seu nome' onChange={(e)=>{setNomeJogador(e.target.value)}}/>
+                    </div>
 
-            <div className="container_Simbolos" >
-                <button onClick={()=> setSimboloJogador('x')} >Escolher X </button>
-                <button onClick={()=> setSimboloJogador('o')} >Escolher O </button>
+                    <div className="container_Simbolos" >
+                        <p id="h3">Escolhar com qual símbolo</p>
+                        <button className="butt" onClick={()=> setSimboloJogador('x')} >Escolher X </button>
+                        <button className="butt" onClick={()=> setSimboloJogador('o')} >Escolher O </button>
+                       
+                        {simboloJogador?
+                        <p id="h3">Simbolo escolhido {simboloJogador}</p>
+                        :<p id="h3"></p>
+                        }
+                    </div>
+
+                    <div className="div_buttonJogar">
+                        <button className="butt" onClick={NomeSubmit}>Jogar</button>
+                    </div>
+                </div>
             </div>
-                {simboloJogador? 
-                <p>Simbolo escolhido {simboloJogador}</p>
-                :<p></p>
-                }
-            <button onClick={NomeSubmit}>Enviar</button>
         </body>
-        
     )
 }
 

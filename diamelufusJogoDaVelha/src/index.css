@@ -31,6 +31,7 @@ input{
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* -------------------------Botao------------------------------ */
 button {
   border-radius: 8px;
   background-color: gray;
@@ -40,5 +41,13 @@ button {
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
+  white-space: nowrap;
+  color: var(--colorText-white);
+  background-color: var(--background-black);
+  border: 1px solid var(--colorText-white);
+}
 
+.butt:hover{
+  color: var(--background-black);
+  background-color: var(--colorText-white);
 }

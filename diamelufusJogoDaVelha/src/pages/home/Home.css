@@ -1,8 +1,10 @@
+/* Vrariaveis de cor */
 :root {
     --colorText-white: #ffffff;
     --background-black: #000;
 }
 
+/* -------------------------corpo------------------------------ */
 #bodyHome{
     height: 100vh;
     display: flex;
@@ -29,20 +31,3 @@
     font-size: 90px;
 }
 
-.bott{
-    font-size: 20px;
-    font-weight: 50;
-    white-space: nowrap;
-    color: var(--colorText-white);
-    background-color: var(--background-black);
-    border: 1px solid var(--colorText-white);
-}
-
-/* #bodyHome a{
-    font-size: 30px;
-} */
-
-.bott:hover{
-    color: var(--background-black);
-    background-color: var(--colorText-white);
-}

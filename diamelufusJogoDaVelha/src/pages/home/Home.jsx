@@ -22,8 +22,8 @@ function Home(){
             </div>
             <p id = 'h1'>Jogo da velha</p>
             <div className="flex">
-            <button className='bott' onClick={()=>{navigate("/nome1p")}}>Um jogador</button>
-            <button className='bott' onClick={()=>{navigate("/nomes2p")}}>Dois jogadores</button>
+            <button className='butt' onClick={()=>{navigate("/nome1p")}}>Um jogador</button>
+            <button className='butt' onClick={()=>{navigate("/nomes2p")}}>Dois jogadores</button>
             </div>
         </body>
         </>

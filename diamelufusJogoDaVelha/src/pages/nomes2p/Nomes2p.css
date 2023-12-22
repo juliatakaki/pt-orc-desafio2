@@ -27,7 +27,8 @@
     font-weight: 500;
     white-space: nowrap;
     color: var(--colorText-white);
-    background-color: transparent;      
+    background-color: transparent;     
+    border: 1px solid transparent; 
 }
 .caixa{
     display: flex;
@@ -48,7 +49,7 @@
     font-weight: 500;
 }
 
-/* --------------------Caixa de Imput--------------------------- */
+/* --------------------Caixa de Input--------------------------- */
 .container_Nomes{
     display: flex;
     align-items: center;
@@ -58,7 +59,7 @@
 
 .div_Nomes{
     align-items: stretch;
-    margin-bottom: 9vh;
+    margin-bottom: 6vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -76,23 +77,6 @@
 } 
 
 
-/* -------------------------Botao------------------------------ */
-.div_buttonJogar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.butt{
-    font-size: 20px;
-    font-weight: 50;
-    white-space: nowrap;
-    color: var(--colorText-white);
-    background-color: var(--background-black);
 
-}
 
-.butt:hover{
-    color: var(--background-black);
-    background-color: var(--colorText-white);
-}

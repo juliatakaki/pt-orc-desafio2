@@ -22,15 +22,18 @@ function Nomes2p() {
         <body className="bodyNomes2p">
             <div className="interface">
                 <button className="voltar" onClick={()=>{navigate("/home")}}> &lt;</button>
+                
                 <div className="caixa">
                     <div className="titulo">
                         <p id="h1">Modo dois jogadores</p>
                     </div>
+
                     <div className="container_Nomes">
                         <div className="div_Nomes">
                             <p id="h2">jogador X</p>
                             <input id="imp" type="text" placeholder="Escolha um nome para o jogador X" onChange={(e)=>{setNomeX(e.target.value)}} ></input>
                         </div>
+                        
                         <div className="div_Nomes">
                             <p id="h2">Jogador O</p>
                             <input id="imp" type="text" placeholder="Escolha um nome para o jogador O" onChange={(e)=>{setNomeO(e.target.value)}} ></input>
