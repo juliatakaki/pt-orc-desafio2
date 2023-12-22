@@ -148,7 +148,7 @@ Isso acontece pois no modo Multiplayer não é necessário fazer a checagem se e
           </div>
 
           <div className='containerGame'>
-              <button onClick={()=>{navigate("/")}}>voltar</button>
+              <button className="botao" onClick={()=>{navigate("/")}}>voltar</button>
               {resultado?
               <h1>{resultado}</h1>:
               <h1>Vez do jogador {localStorage.getItem(`player${player}`)}</h1>
@@ -165,8 +165,8 @@ Isso acontece pois no modo Multiplayer não é necessário fazer a checagem se e
                   <button onClick={()=>{modos_de_Jogo(8)}}>{board[8]}</button>
               </div> 
               <div className='containerReset'>
-                  <button onClick={restart}>Recomeçar</button>
-                  <button onClick={zerarPlacar}>zerar placar</button>
+                  <button className="botao" onClick={restart}>Recomeçar</button>
+                  <button className="botao" onClick={zerarPlacar}>zerar placar</button>
               </div>
           </div>
 

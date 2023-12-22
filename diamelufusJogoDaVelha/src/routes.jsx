@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
-import Home from "./pages/Home/Home"
+import Home from "./pages/home/Home"
 import Multiplayer from "./pages/multiplayer/Multiplayer"
 import Singleplayer from "./pages/singleplayer/Singleplayer"
 import Nomes2p from "./pages/nomes2p/Nomes2p"

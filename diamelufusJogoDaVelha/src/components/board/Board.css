@@ -1,33 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+*{
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
 #bodyGame{
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: space-evenly;
+    background-color: black;
+    color: white;
+}
 
-  }
 .containerGame{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-.containerReset button{
-    margin: 5px;
-  }
+
 .game{
     margin: 10px;
     display: grid;
     grid-template-columns: auto auto auto;
-  
+    text-align: center;
   }
+
 .game button{
-    margin: 2px;
-    height: 150px;
-    width: 150px;
-    border: 2px solid black;
-    font-size: 50px;
+    margin: 8px;
+    height: 180px;
+    width: 180px;
+    border: 1px solid white;
+    font-size: 4em;
+    color: white;
+    background-color: black;
+    border-radius: 2%;
   }
-#voltar{
-  font-size: 20px;
-  color: black ;
-}
+
+  .botao{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    width: 200px;
+    margin: 20px;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+
+  .botao:hover{
+    color: black;
+    background-color: white;
+    transform: scale(1.04);
+  }
