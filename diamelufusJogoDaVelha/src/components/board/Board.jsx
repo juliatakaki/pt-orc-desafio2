@@ -165,8 +165,8 @@ Isso acontece pois no modo Multiplayer não é necessário fazer a checagem se e
                   <button onClick={()=>{modos_de_Jogo(8)}}>{board[8]}</button>
               </div> 
               <div className='containerReset'>
-                  <button className="botao" onClick={restart}>Recomeçar</button>
-                  <button className="botao" onClick={zerarPlacar}>zerar placar</button>
+                  <button id="restart" className="botao" onClick={restart}>Recomeçar</button>
+                  <button id="zerar" className="botao" onClick={zerarPlacar}>zerar placar</button>
               </div>
           </div>
 
