@@ -46,14 +46,14 @@ function Nome1p() {
                     </div>
 
                     <div className="container_Simbolos" >
-                        <p id="h3">Escolha seu símbolo!</p>
+                        {simboloJogador?
+                        <p id="h3">Simbolo escolhido {simboloJogador}</p>
+                        :<p id="h3">Escolha seu símbolo!</p>
+                        }
                         <button className="butt" onClick={()=> setSimboloJogador('x')} >Escolher X </button>
                         <button className="butt" onClick={()=> setSimboloJogador('o')} >Escolher O </button>
                        
-                        {simboloJogador?
-                        <p id="h3">Simbolo escolhido {simboloJogador}</p>
-                        :<p id="h3"></p>
-                        }
+                        
                     </div>
 
                     <div className="div_buttonJogar">
