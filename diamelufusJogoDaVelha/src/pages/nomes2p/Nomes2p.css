@@ -1,23 +1,98 @@
+/* Vrariaveis de cor */
+:root {
+    --colorText-white: #ffffff;
+    --background-black: #000;
+    --background-2: #ffffff52;
+}
+
+/* -------------------------corpo------------------------------ */
 .bodyNomes2p{
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    align-items: center;
+    background-color: var(--background-black);
 }
+
+.interface{
+    width: 50%;
+    height: 70%;
+    background-color: var(--background-2);
+    border-radius: 32px;
+}
+/* -------------------------caixa------------------------------ */
+.voltar{
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--colorText-white);
+    background-color: transparent;      
+}
+.caixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------------Titulo------------------------------ */
+.titulo{
+    margin-top: 6%;
+    margin-bottom: 8%;
+}
+
+#h1{
+    color: var(--colorText-white);
+    font-size: 50px;
+    font-weight: 500;
+}
+
+/* --------------------Caixa de Imput--------------------------- */
 .container_Nomes{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
 }
+
 .div_Nomes{
-    height: 20vh;
+    align-items: stretch;
+    margin-bottom: 9vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 400px;
 }
+
+#h2{
+    color: var(--colorText-white);
+}
+
+#imp{
+    padding: 1%;
+    border: 1px solid var(--colorText-white);
+    border-radius: 16px;
+} 
+
+
+/* -------------------------Botao------------------------------ */
 .div_buttonJogar{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.butt{
+    font-size: 20px;
+    font-weight: 50;
+    white-space: nowrap;
+    color: var(--colorText-white);
+    background-color: var(--background-black);
+
+}
+
+.butt:hover{
+    color: var(--background-black);
+    background-color: var(--colorText-white);
 }

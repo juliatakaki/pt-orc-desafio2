@@ -20,18 +20,26 @@ function Nomes2p() {
 
     return ( 
         <body className="bodyNomes2p">
-            <div className="container_Nomes">
-                <div className="div_Nomes">
-                    <label>Escolha um nome para o jogador X:</label>
-                    <input type="text" onChange={(e)=>{setNomeX(e.target.value)}} placeholder="Digite um nome"></input>
+            <div className="interface">
+                <button className="voltar" onClick={()=>{navigate("/home")}}> &lt;</button>
+                <div className="caixa">
+                    <div className="titulo">
+                        <p id="h1">Modo dois jogadores</p>
+                    </div>
+                    <div className="container_Nomes">
+                        <div className="div_Nomes">
+                            <p id="h2">jogador X</p>
+                            <input id="imp" type="text" placeholder="Escolha um nome para o jogador X" onChange={(e)=>{setNomeX(e.target.value)}} ></input>
+                        </div>
+                        <div className="div_Nomes">
+                            <p id="h2">Jogador O</p>
+                            <input id="imp" type="text" placeholder="Escolha um nome para o jogador O" onChange={(e)=>{setNomeO(e.target.value)}} ></input>
+                        </div>
+                    </div>
+                    <div className="div_buttonJogar"> 
+                        <button className="butt" onClick={iniciarGame}>jogar</button>
+                    </div>
                 </div>
-                <div className="div_Nomes">
-                    <label>Escolha um nome para o jogador O:</label>
-                    <input type="text" onChange={(e)=>{setNomeO(e.target.value)}} placeholder="Digite um nome" ></input>
-                </div>
-            </div>
-            <div className="div_buttonJogar"> 
-                <button onClick={iniciarGame}>jogar</button>
             </div>
         </body>
      );

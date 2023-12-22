@@ -12,6 +12,7 @@ function AppRoutes(){
     return(
        <BrowserRouter>
             <Routes>
+                <Route path="/home" element={<Home />}></Route>
                 <Route path="/nomes2p" element={<Nomes2p />}></Route>
                 <Route path="/nome1p" element = {<Nome1p />}></Route>
                 <Route path="/multiplayer" element={<Multiplayer />}></Route>

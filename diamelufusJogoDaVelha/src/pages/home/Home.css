@@ -1,15 +1,48 @@
+:root {
+    --colorText-white: #ffffff;
+    --background-black: #000;
+}
+
 #bodyHome{
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color: var(--background-black);
 }
 
-#bodyHome h1{
-    font-size: 50px;
+.flex{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50%;
 }
-.Container_Buttons_Home button{
-    width: 150px;
-    margin: 20px;
+
+#img{
+    width: 170px;
+    height: 170px;
+}
+
+#h1{
+    color: var(--colorText-white);
+    font-size: 90px;
+}
+
+.bott{
+    font-size: 20px;
+    font-weight: 50;
+    white-space: nowrap;
+    color: var(--colorText-white);
+    background-color: var(--background-black);
+    border: 1px solid var(--colorText-white);
+}
+
+/* #bodyHome a{
+    font-size: 30px;
+} */
+
+.bott:hover{
+    color: var(--background-black);
+    background-color: var(--colorText-white);
 }

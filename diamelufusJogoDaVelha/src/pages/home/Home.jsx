@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import './Home.css'
+import xImage from './images/x.png';
+import OImage from './images/0.png';
 
 function Home(){
     const navigate = useNavigate()
@@ -14,10 +16,14 @@ function Home(){
     return(
         <>
         <body id='bodyHome'>
-            <h1>Jogo da velha</h1>
-            <div className="Container_Buttons_Home" >
-                <button onClick={()=>{navigate("/nomes2p")}}>2 jogadores</button>
-                <button onClick={()=>{navigate("/nome1p")}}>1 Jogador</button>
+            <div className="flex">
+                <img id='img' src={xImage} alt="" />
+                <img id='img' src={OImage} alt="" />
+            </div>
+            <p id = 'h1'>Jogo da velha</p>
+            <div className="flex">
+            <button className='bott' onClick={()=>{navigate("/nome1p")}}>Um jogador</button>
+            <button className='bott' onClick={()=>{navigate("/nomes2p")}}>Dois jogadores</button>
             </div>
         </body>
         </>
