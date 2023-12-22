@@ -56,7 +56,16 @@
     margin-top: 10px;
     align-items: center;
     justify-content: center;
+    margin: 2rem;
+
     }
+
+.container_Simbolos{
+    width: 25rem;
+    margin-top: 2rem;
+}
+
+
 
 #h3{
     margin-top: 10px;

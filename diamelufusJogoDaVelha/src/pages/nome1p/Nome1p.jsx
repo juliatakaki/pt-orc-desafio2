@@ -46,7 +46,7 @@ function Nome1p() {
                     </div>
 
                     <div className="container_Simbolos" >
-                        <p id="h3">Escolhar com qual símbolo</p>
+                        <p id="h3">Escolha seu símbolo!</p>
                         <button className="butt" onClick={()=> setSimboloJogador('x')} >Escolher X </button>
                         <button className="butt" onClick={()=> setSimboloJogador('o')} >Escolher O </button>
                        
