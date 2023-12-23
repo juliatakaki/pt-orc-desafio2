@@ -1,9 +1,3 @@
-/* Vrariaveis de cor */
-:root {
-    --colorText-white: #ffffff;
-    --background-black: #000;
-}
-
 /* -------------------------corpo------------------------------ */
 #bodyHome{
     height: 100vh;

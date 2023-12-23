@@ -9,8 +9,8 @@
     height: 100vh;
     align-items: center;
     justify-content: space-evenly;
-    background-color: black;
-    color: white;
+    background-color: var(--background-black);
+    color: var(--colorText-white);
 }
 
 .containerGame{
@@ -31,18 +31,18 @@
     margin: 8px;
     height: 20vh;
     width: 20vh;
-    border: 1px solid white;
+    border: 1px solid var(--colorText-white);
     font-size: 6vh;
-    color: white;
-    background-color: black;
+    color: var(--colorText-white);
+    background-color: var(--background-black);
     border-radius: 2%;
     justify-content: center;
   }
 
   .botao{
-    border: 2px solid white;
-    background-color: black;
-    color: white;
+    border: 2px solid var(--colorText-white);
+    background-color: var(--background-black);
+    color: var(--colorText-white);
     width: 28vh;
     margin: 2.8vh;
     transition: 0.3s;
@@ -58,7 +58,7 @@
   }
 
   .botao:hover{
-    color: black;
-    background-color: white;
+    color: var(--background-black);
+    background-color: var(--colorText-white);
     transform: scale(1.04);
   }

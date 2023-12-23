@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+/* -------------------------variaveis de cor------------------------------ */
+:root {
+  --colorText-white: #ffffff;
+  --background-black: #000;
+  --background-2: #ffffff52;
+}
+
+/* -------------------------Corpo------------------------------ */
 *{
   margin: 0;
 	padding: 0;
