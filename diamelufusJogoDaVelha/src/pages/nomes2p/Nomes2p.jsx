@@ -31,12 +31,12 @@ function Nomes2p() {
                     <div className="container_Nomes">
                         <div className="div_Nomes">
                             <p id="h2">jogador X</p>
-                            <input id="imp" type="text" placeholder="Escolha um nome para o jogador X" onChange={(e)=>{setNomeX(e.target.value)}} ></input>
+                            <input id="imp" type="text" maxLength={16} autoComplete="off" placeholder="Escolha um nome para o jogador X" onChange={(e)=>{setNomeX(e.target.value)}} ></input>
                         </div>
                         
                         <div className="div_Nomes">
                             <p id="h2">Jogador O</p>
-                            <input id="imp" type="text" placeholder="Escolha um nome para o jogador O" onChange={(e)=>{setNomeO(e.target.value)}} ></input>
+                            <input id="imp" type="text" maxLength={16} autoComplete="off" placeholder="Escolha um nome para o jogador O" onChange={(e)=>{setNomeO(e.target.value)}} ></input>
                         </div>
                     </div>
                     <div className="div_buttonJogar"> 

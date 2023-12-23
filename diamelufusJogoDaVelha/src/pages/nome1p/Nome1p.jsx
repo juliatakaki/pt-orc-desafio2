@@ -37,12 +37,12 @@ function Nome1p() {
                 <button className="voltar" onClick={()=>{navigate("/home")}}> &lt;</button>
                 <div className="caixa">
                     <div className="titulo">
-                        <p id="h1">Modo um jogadores</p>
+                        <p id="h1">Modo um jogador</p>
                     </div>
 
                     <div className="nome">
                         <p id="h2">Nome do Jogador:</p> 
-                        <input id="imp" type='text' name='nome' placeholder='Digite seu nome' onChange={(e)=>{setNomeJogador(e.target.value)}}/>
+                        <input id="imp" type='text' name='nome' maxLength={16} autoComplete="off" placeholder='Digite seu nome' onChange={(e)=>{setNomeJogador(e.target.value)}}/>
                     </div>
 
                     <div className="container_Simbolos" >
